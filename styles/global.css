@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 :root {
   --snitap-sun: #FFCD1E;
   --snitap-sky-mid: #06B6D4;
