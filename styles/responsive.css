@@ -18,7 +18,7 @@
   section.hero {
     
     & .buttons {
-      margin-top: 42px;
+      margin-top: 3.5rem;
 
       & .button {
         &.buy {
@@ -49,6 +49,10 @@
 
   section.hero {
     flex-direction: column-reverse;
+
+    & .cta {
+      margin-left: 2.5rem;
+    }
 
     & > div:nth-child(2) {
       & img[src*="stars-2"] {
@@ -126,7 +130,7 @@
   }
 
   nav.header-nav {
-    min-width: 320px;
+    min-width: 16rem;
     padding: 1.25rem 1.5rem;
   }
 
@@ -134,11 +138,15 @@
     flex-direction: column-reverse;
     padding: 1rem 1.5rem;
     justify-content: none;
-    gap: 32px;
+    gap: 2rem;
+
+    & .cta{
+      margin-left: 3,125rem;
+    }
 
     & > div:nth-child(2) {
-      min-width: 312px;
-      height: 350px;
+      min-width: 19.5rem;
+      height: 21.875rem;
 
       & img[src*="patins"] {
         width: 96%;
@@ -165,7 +173,7 @@
     }
 
     & h1 {
-      font-size: 32px;
+      font-size: 2rem;
       width: 97%;
       gap: 0.25rem;
       flex-wrap: wrap;
@@ -181,7 +189,7 @@
     & .buttons {
       flex-direction: column-reverse;
       gap: 1.5rem;
-      margin-top: 42px;
+      margin-top: 2.625rem;
 
       & .button {
         &.buy {
@@ -223,7 +231,7 @@
       display: flex;
       gap: 1.5rem;
       flex-direction: column;
-      margin-block: 48px;
+      margin-block: 3rem;
     }
 
     & .social-links {
@@ -237,6 +245,14 @@
           scale: 1.5;
         }
       }
+    }
+  }
+}
+
+@media (width <= 375px) {
+  section.hero {
+    & .cta {
+      margin-left: 1.75rem;
     }
   }
 }
@@ -255,6 +271,10 @@
   section.hero {
     & h1 {
       width: 101%;
+    }
+
+    & .cta{
+      margin-left: 0;
     }
 
     & > div:nth-child(2) {
